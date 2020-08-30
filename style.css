@@ -1,0 +1,97 @@
+*{margin: 0; padding: 0;}
+.night{
+    background-image: url("images/night.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.tree-img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+}
+.moon{
+    position: absolute;
+    right: 647px;
+    top: 276px;
+    box-shadow: 0px 0px 80px white;
+    border-radius: 50%;
+    animation-name: moon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.start-one, .start-two, .start-three, .start-four, .start-five{
+    width: 100px;
+    position: absolute;
+}
+.start-one{
+    top: 100px;
+    left: 200px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-name: starOne;
+    opacity: 0;
+}
+.start-two{
+    top: 50px;
+    left: 800px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+    animation-name: starTwo;
+    opacity: 0;
+}
+.start-three{
+    top: 100px;
+    right: 800px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+    animation-name: starThree;
+    opacity: 0;
+}
+.start-four{
+    top: 50px;
+    right: 200px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    animation-name: starfour;
+    opacity: 0;
+}
+.start-five{
+    top: 300px;
+    right: 1000px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: starFive;
+    animation-delay: 4s;
+    opacity: 0;
+}
+@keyframes moon {
+    0% {box-shadow: 0px 0px 50px white}
+    50% {box-shadow: 0px 0px 0px white}
+    100% {box-shadow: 0px 0px 50px white}
+}
+@keyframes starOne{
+    from {top: 100px; left: 200px; opacity: 1}
+    to {top: 300px; left: 0px; opacity: 0;}
+}
+@keyframes starTwo{
+    from {top: 50px; left: 800px; opacity: 1}
+    to {top: 80%; left: 0px; opacity: 0;}
+}
+@keyframes starFive{
+    from {top: 300px;right: 1000px; opacity: 1}
+    to {top: 80%; right: 1500px; opacity: 0;}
+}
+@keyframes starThree{
+    from {top: 100px; right: 800px; opacity: 1}
+    to {top: 80%; right: 1300px; opacity: 0;}
+}
+@keyframes starfour{
+    from {top: 50px; right: 200px; opacity: 1}
+    to {top: 80%; right: 1000px; opacity: 0;}
+}
